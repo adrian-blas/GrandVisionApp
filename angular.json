@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "grandVision"
+  "defaultProject": "grandVision",
+  "cli": {
+    "analytics": false
+  }
 }

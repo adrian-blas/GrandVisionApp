@@ -1,0 +1,32 @@
+table {
+    color: #ffffff;
+    margin: 0%;
+    border: 0rem;
+}
+
+table td {
+    border: 1px solid #dee2e6;
+}
+
+.table-thead-th {
+    font-size: smaller;
+    border: 0rem;
+    padding: 0;
+    text-align: center;
+    width: 14.285714286%;
+}
+
+td {
+    padding: 0px 0px 0px 10px;
+    height: 80px;
+}
+
+.pointer-hover:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.back-muted {
+    background-color: rgba(184, 174, 174, 0.287)!important;
+    cursor: not-allowed;
+}

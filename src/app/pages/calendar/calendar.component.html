@@ -1,0 +1,230 @@
+<div class="container">
+    <div class="row justify-content-between no-gutters mb-5 mt-5">
+        <div class="col-8 text-left">
+            <h3 class="card-title text-left font-weight-bold">Calendar</h3>
+        </div>
+
+        <div class="col-4 text-right">
+            <button [routerLink]="['/reminder', 'nuevo']" type="button" class="btn btn-rounded btn-outline-info">
+                New reminder
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill ml-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                </svg>
+          </button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12">
+            <div class="table-responsive-sm table-responsive-md">
+                <table class="table">
+                    <thead>
+                        <tr class="bg-primary">
+                            <th scope="col" class="table-thead-th">Sunday</th>
+                            <th scope="col" class="table-thead-th">Monday</th>
+                            <th scope="col" class="table-thead-th">Tuesday</th>
+                            <th scope="col" class="table-thead-th">Wednesday</th>
+                            <th scope="col" class="table-thead-th">Thursday</th>
+                            <th scope="col" class="table-thead-th">Friday</th>
+                            <th scope="col" class="table-thead-th">Saturday</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="text-black-50 back-muted" (click)="goReminder()">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">30</div>
+                                </div>
+                            </td>
+                            <td class="text-black-50 back-muted" (click)="goReminder()">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">31</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '1']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">1</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '2']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">2</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '3']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">3</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '4']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">4</div>
+                                </div>
+                            </td>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '5']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">5</div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '6']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">6</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '7']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">7</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '8']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">8</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '9']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">9</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '10']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">10</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '11']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">11</div>
+                                </div>
+                            </td>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '12']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">12</div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '13']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">13</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '14']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">14</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '15']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">15</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '16']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">16</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '17']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">17</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '18']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">18</div>
+                                </div>
+                            </td>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '19']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">19</div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '20']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">20</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '21']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">21</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '22']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">22</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '23']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">23</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '24']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">24</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '25']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">25</div>
+                                </div>
+                            </td>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '26']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">26</div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-info pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '27']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">27</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '28']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">28</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '29']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">29</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '30']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">30</div>
+                                </div>
+                            </td>
+                            <td class="text-body pointer-hover" (click)="goReminder()" [routerLink]="['/reminder', '31']">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">31</div>
+                                </div>
+                            </td>
+                            <td class="text-black-50 back-muted" (click)="goReminder()">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">1</div>
+                                </div>
+                            </td>
+                            <td class="text-black-50 back-muted" (click)="goReminder()">
+                                <div class="row justify-content-start no-gutters">
+                                    <div class="col-12">2</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
